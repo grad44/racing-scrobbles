@@ -8,10 +8,14 @@ module.exports = {
         "./nuxt.config.{js,ts}",
         "./app.vue",
     ],
+    daisyui: {
+        themes: ["forest"],
+    },
     theme: {
         extend: {},
     },
     plugins: [
+        require('@tailwindcss/typography'),
         require("daisyui")
     ],
 }
