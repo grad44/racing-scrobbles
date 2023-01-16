@@ -34,12 +34,14 @@
         Scrobbles
       </p>
     </article>
-    <form v-if="user" class="flex justify-center gap-2">
-      <NuxtLink :to="`/dashboard/${user.name}`"
-        ><button class="btn btn-primary">Continue</button></NuxtLink
+    <div v-if="user" class="flex justify-center gap-2">
+      <NuxtLink
+        class="btn btn-primary"
+        :to="{ name: 'dashboard-username', params: { username } }"
+        >Continue</NuxtLink
       >
       <button class="btn" @click="user = null">Change user</button>
-    </form>
+    </div>
   </div>
 </template>
 

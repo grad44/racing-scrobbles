@@ -3,7 +3,9 @@
     <header>
       <div class="navbar bg-base-100">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl">Racing Scrobbles</a>
+          <NuxtLink to="/" class="btn btn-ghost normal-case text-xl"
+            >Racing Scrobbles</NuxtLink
+          >
         </div>
         <div class="flex-none">
           <button class="btn btn-square btn-ghost">
